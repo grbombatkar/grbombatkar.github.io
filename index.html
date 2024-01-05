@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +52,9 @@
         <div id="lead-content">
             <h1>Ganesh Bombatkar</h1>
             <h2>CSE IIT Hyderabad</h2>
-            <a href="/resume" class="btn-rounded-white">Download Resume</a>
+            <a href="https://drive.google.com/file/d/18FKBDSZIheg7GNC3JlZQO7W4_R4X51Pk/view?usp=sharing" target="_blank" class="btn-rounded-white">Download Resume</a>
+            <!-- <a href="https://hits.seeyoufarm.com"><img
+                    src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgrbombatkar.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=&edge_flat=false" /></a> -->
         </div>
         <!-- End #lead-content -->
 
@@ -72,9 +76,9 @@
                     <h2 class="heading">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
-                        I am an CSE undergraduate student at IIT Hyderabad. I am passionate about programming and I love to learn new things. I am a quick learner and a team player. I am always ready to take up new challenges and I am a hardworking person.
-                    </p>
+                        I am an CSE undergraduate student at IIT Hyderabad. I am passionate about programming and I love
+                        to learn new things. I am a quick learner and a team player. I am always ready to take up new
+                        challenges and I am a hardworking person.
                 </div>
             </div>
         </div>
@@ -85,25 +89,64 @@
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="May 2023 - July 2023">
-                <h3>Amazon Hyderabad</h3>
-                <h4>SDE Intern</h4>  
+                <div class="exp-header-container">
+                    <img alt="Amazon" src="images/amazon_logo.jpeg" />
+                    <div class="exp-header">
+                        <h3>Amazon Hyderabad</h3>
+                        <h4>SDE Intern</h4>
+                    </div>
+                </div>
                 <p>
-                    Optimized the restrictions search algorithm by leveraging indexing techniques on the DynamoDB
-                    database, resulting in a remarkable 10x improvement in search speed and overall system respon-
-                    siveness.
-                </p>
-                <p>
-                    system. This feature significantly reduced payload size and improved the efficiency of restriction
-                    Developed and implemented region negation support for creating and enforcing restrictions in the
-                    evaluations
+                <ul>
+                    <li>
+                        Optimized the restrictions search algorithm by leveraging indexing techniques on the DynamoDB
+                        database, resulting in a
+                        remarkable 10x improvement in search speed.
+                    </li>
+                    <li>
+
+                        Proposed and implemented a new architecture for the restriction enforcement system, which
+                        reduced the payload size by
+                        50% and improved the efficiency of restriction evaluations by 1.2x.
+                    </li>
+                    <li>
+                        Developed a REST API for bulk searching of the restrictions
+                    </li>
+                </ul>
                 </p>
             </div>
 
             <div data-date="Dec 2022 - Feb 2023">
-                <h3>IIT Hyderabad</h3>
-                <h4>Teaching Assistant</h4>
+                <div class="exp-header-container">
+                    <img alt="Amazon" src="images/iithyderabad_logo.jpeg" />
+                    <div class="exp-header">
+                        <h3>IIT Hyderabad</h3>
+                        <h4>Teaching Assistant</h4>
+                    </div>
+                </div>
                 <p>
-                    Assisted the professor in conducting the exams and grading the answer scripts of the students.
+                <ul>
+                    <li>
+                        Assisted the professor in conducting the exams and grading the answer scripts of the students.
+                    </li>
+                </ul>
+                </p>
+            </div>
+
+            <div data-date="jan 2022 - May 2023">
+                <div class="exp-header-container">
+                    <img alt="Amazon" src="images/lambda-removebg-preview.png" />
+                    <div class="exp-header">
+                        <h3>Lambda IIT Hyderabad</h3>
+                        <h4>Core Member</h4>
+                    </div>
+                </div>
+                <p>
+                <ul>
+                    <li>
+                        Contribute in creating the programming culture in the campus by conducting various events.
+                    </li>
+                </ul>
                 </p>
             </div>
         </div>
@@ -113,35 +156,72 @@
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>Indian Institute of technology Hyderabad</h3>
-            <span class="education-date">2020 - 2024</span>
-            <h4>Bachelor of Technology in Computer Science and Engineering</h4>
-            <p>
+            <div class="education-block-header">
+                <img alt="Amazon" src="images/iithyderabad_logo.jpeg" />
+                <div class="education-block-header-info">
+                    <h3>Indian Institute of technology Hyderabad</h3>
+                    <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                </div>
+                <span class="education-date">2020 - 2024</span>
+            </div>
+            <p class="percentage">
                 CGPA: 8.75/10
             </p>
             <p>
-                Relevant Courses: Introduction to programming, Software Development Fundamental, Data Structures, Algorithm, Software
-                Engineering, Computer Architecture, Theory of Computation, Operating System, Database Management System, Compiler,
-                Computer Network, Introduction to AI, Machine Learning, Fraud analysis, Deep Learning, 
-                Approximation Algorithm, Combinatorics, Number Theory and Algebra, Tensor Techniques and Application.
+                <b>Relevant Courses:</b>
+            <ul>
+                <li>
+                    <b>Computer Science:</b> Data Structures and Algorithms, Approximation Algorithms, Computer
+                    Networks,
+                    Software Engineering,
+                    DBMS, Quantum Computing, Parallel Programming, Compiler Design, Operating Systems
+                </li>
+                <li>
+                    <b>ArtifciaI Intellegence:</b> Machine Learning, Fraud analysis, Deep Learning, Reinforcement
+                    Learning,
+                    Online Algorithms
+                </li>
+                <!-- Relevant Courses: Introduction to programming, Software Development Fundamental, Data Structures,
+                        Algorithm, Software
+                        Engineering, Computer Architecture, Theory of Computation, Operating System, Database Management System,
+                        Compiler,
+                        Computer Network, Introduction to AI, Machine Learning, Fraud analysis, Deep Learning,
+                        Approximation Algorithm, Combinatorics, Number Theory and Algebra, Tensor Techniques and Application. -->
+            </ul>
             </p>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>Jawahar Navodya Vidyalaya Bangalore</h3>
+            <!-- <h3>Jawahar Navodya Vidyalaya Bangalore</h3>
             <span class="education-date">2018 - 2020</span>
             <h4>Higher Secondary Education</h4>
             <p>
+                Percentage: 95.0%
+            </p> -->
+            <div class="education-block-header">
+                <img alt="Amazon" src="images/navodaya_logo.jpeg" />
+                <div class="education-block-header-info">
+                    <h3>Jawahar Navodya Vidyalaya Bangalore</h3>
+                    <h4>Higher Secondary Education</h4>
+                </div>
+                <span class="education-date">2018 - 2020</span>
+            </div>
+            <p class="percentage">
                 Percentage: 95.0%
             </p>
         </div>
 
 
         <div class="education-block">
-            <h3>Jawahar Navodya Vidyalaya Shegaon</h3>
-            <span class="education-date">2013 - 2018</span>
-            <h4>Secondary Education</h4>
+            <div class="education-block-header">
+                <img alt="Amazon" src="images/navodaya_logo.jpeg" />
+                <div class="education-block-header-info">
+                    <h3>Jawahar Navodya Vidyalaya Bangalore</h3>
+                    <h4>Secondary Education</h4>
+                </div>
+                <span class="education-date">2013 - 2018</span>
+            </div>
             <p>
                 Percentage: 94.2%
             </p>
@@ -156,16 +236,28 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/nabla.jpeg"/>
+                        <img src="images/LLVMlogo.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Nabla</h3>
-                        <p>
-                            Nabla is a Domain specific langauge built for the purpose of Tensor Operations and Automatic differentiation It uses
-                            dynamically built computational graphs for back-propagation.
-                        </p>
-                        <a href="https://github.com/Ganesh-RB/nabla" target="_blank">View Project</a>
+                        <div class="project-info-header">
+                            <h3>Nabla</h3>
+                            <!-- Place this tag where you want the button to render. -->
+                        </div>
+                        <div class="project-info-body">
+                            <p>
+                                Nabla is a Domain specific langauge pecifically designed for tensor operations with an
+                                advanced autograd functionality, with a compiler capable of translating the custom
+                                language into highly efficient C++ code.
+                            </p>
+                        </div>
+                        <div class="project-info-footer">
+                            <a class="github-button" href="https://github.com/Ganesh-RB/nabla" data-size="large"
+                                target="_blank">View Project</a>
+                            <a class="github-button" href="https://github.com/Ganesh-RB/nabla" data-icon="octicon-star"
+                                data-size="large" data-show-count="true"
+                                aria-label="Star Ganesh-RB/nabla on GitHub">Star</a>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -173,20 +265,119 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/ConSensys-logo.jpg" />
+                        <img src="images/cocologo-removebg-preview.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Notify Me Snap</h3>
-                        <p>
-                            Developed a custom snap for Metamask to enable token receipt notifcations.
-                            Implemented a spam detection system to flter notifcations effectively
-                        </p>
-                        <a href="https://github.com/Ganesh-RB/21_notifyMe-snap" target="_blank">View Project</a>
+                        <div class="project-info-header">
+                            <h3>Image Captioning</h3>
+                        </div>
+                        <div class="project-info-body">
+                            <p>
+                                Developed a encoder-decoder model for generating captions on images
+                                capturing daily life scenes,
+                                using COCO dataset.
+                                Deployed the model on GitHub Pages, with ONNX.js.
+                            </p>
+                        </div>
+                        <div class="project-info-footer">
+                            <a class="github-button" data-size="large"
+                                href="https://github.com/Ganesh-RB/21_notifyMe-snap" target="_blank">View Project</a>
+                            <a class="github-button" href="https://github.com/Ganesh-RB/notify-me"
+                                data-icon="octicon-star" data-size="large" data-show-count="true"
+                                aria-label="Star Ganesh-RB/notify-me on GitHub">Star</a>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/MetaMask_Fox.svg.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <div class="project-info-header">
+                            <h3>Notify Me Snap</h3>
+                        </div>
+                        <div class="project-info-body">
+                            <p>
+                                Developed a custom snap for Metamask to enable token receipt notifcations, with
+                                a spam detection system to flter unwanted and redunt notifcations effectively.
+                            </p>
+                        </div>
+                        <div class="project-info-footer">
+                            <a class="github-button" data-size="large"
+                                href="https://github.com/Ganesh-RB/21_notifyMe-snap" target="_blank">View Project</a>
+                            <a class="github-button" href="https://github.com/Ganesh-RB/notify-me"
+                                data-icon="octicon-star" data-size="large" data-show-count="true"
+                                aria-label="Star Ganesh-RB/notify-me on GitHub">Star</a>
+                        </div>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/research-paper-inquiry.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <div class="project-info-header">
+                            <h3>Research Paper Inquiry</h3>
+                        </div>
+                        <div class="project-info-body">
+                            <p>
+                                Developed a web platform to unravel the citation networks and provide profound insights
+                                into academic research landscapes.
+                                Implemented an ranking system leveraging the PageRank algorithm with an innovative
+                                feature detecting instances of authors strategically citing
+                                each other's works, boosting the influence of their papers.
+                            </p>
+                        </div>
+                        <div class="project-info-footer">
+                            <a class="github-button" data-size="large"
+                                href="https://github.com/Ganesh-RB/research-paper-inquiry" target="_blank">View
+                                Project</a>
+                            <a class="github-button" href="https://github.com/Ganesh-RB/research-paper-inquiry"
+                                data-icon="octicon-star" data-size="large" data-show-count="true"
+                                aria-label="Star Ganesh-RB/research-paper-inquiry on GitHub">Star</a>
+                        </div>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project-totm.png   " />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <div class="project-info-header">
+                            <h3>Game-TOTM</h3>
+                        </div>
+                        <div class="project-info-body">
+                            <p>
+                                Tomb of the Mask color is a simple 2D cross-platform game developed using C++ and SFML
+                                library with a diverse array of enemies enhancing player engagement through
+                                meticulously crafted challenges.
+                            </p>
+                        </div>
+                        <div class="project-info-footer">
+                            <a class="github-button" data-size="large" href="https://github.com/Ganesh-RB/project-totm"
+                                target="_blank">View Project</a>
+                            <a class="github-button" href="https://github.com/Ganesh-RB/project-totm"
+                                data-icon="octicon-star" data-size="large" data-show-count="true"
+                                aria-label="Star Ganesh-RB/project-totm on GitHub">Star</a>
+                        </div>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
             </div>
         </div>
     </div>
@@ -231,7 +422,7 @@
     -->
     <!-- End #contact-form -->
 
-    <footer>
+    <footer class="background-alt">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5 copyright">
@@ -247,16 +438,20 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/Ganesh-RB" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Ganesh-RB" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/ganeshrb" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com/in/ganeshrb" target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="mailto:ganeshbombatkar777@gmail.com?subject=Reaching via a portfolio:grbombatkar.github.io" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a href="mailto:ganeshbombatkar777@gmail.com?subject=Reaching via a portfolio:grbombatkar.github.io"
+                                target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://grbombatkar.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                            <a href="https://grbombatkar.github.io" target="_blank"><i class="fa fa-globe"
+                                    aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
